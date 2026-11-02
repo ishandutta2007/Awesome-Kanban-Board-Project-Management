@@ -1,223 +1,119 @@
 # Awesome-Kanban-Board-Project-Management
 
-## Top Kanban Board Project Management Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Topics](https://img.shields.io/badge/topics-kanban%20%7C%20agile%20%7C%20project--management-blue.svg)](https://github.com/ishandutta2007/Awesome-Kanban-Board-Project-Management)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Visual Task Boards, Agile Workflows & Self-Hosted Kanban Platforms*  
+> A curated directory of the best **Kanban board project management** software, visual task management platforms, agile workflow tools, and self-hosted open-source Kanban alternatives.
 
 **Last updated: November 2026**
 
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Kanban Board Project Management**. These tools enable teams to visualize work as cards moving across stages, limit work-in-progress, and maintain a steady flow of deliverables—turning abstract backlogs into tangible, drag-and-drop progress.
-
-
-
-**Examples** include Trello, Asana, Monday.com, Kanban Tool, Kanbanchi, SwiftKanban, ClickUp, Wrike, Miro, and MeisterTask (the category leaders).
-
-
-
-**Open-source emphasis**: Kanban Board Project Management is a domain where open-source tooling is **genuinely mature and production-proven, but the right choice depends on whether you need a direct Trello clone or a broader project management platform**. **Wekan** is the most direct open-source Trello replacement—MIT-licensed, with real-time boards, lists, cards, swimlanes, WIP limits, webhooks, and importers for Trello, Jira, and Asana . **Vikunja** offers the most flexible task management—a single binary or Docker deployment with four views (List, Kanban, Gantt, Table) over the same tasks, plus reminders and repeating tasks . **Plane** is the most modern Jira/Linear-style platform, with issues, cycles, modules, and a spec-workflow that product teams recognize . The critical caveat: **Focalboard's standalone version has been unmaintained since 2024**—Mattermost refocused its effort, and the repo has been quiet since June 2025 . **Kanboard is in maintenance mode**—stable and finished, but not receiving major new features . Choose based on whether you need a proven Trello clone (Wekan), a multi-view task manager (Vikunja), or a modern product tracker (Plane).
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
+---
 
 ## Table of Contents
 
-- [SaaS/Hosted Platforms](#saas-products)
-
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Kanban Platforms](#saas--hosted-kanban-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
+- [Comparison & Architecture Guidelines](#comparison--architecture-guidelines)
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Trello](https://trello.com/)**  
-
-  The original kanban board platform; cards, lists, and Power-Ups for extending functionality. The benchmark against which all Kanban tools are measured.
-
-
-
-- **[Asana](https://asana.com/)**  
-
-  Work management platform with Board view (kanban-style) alongside List, Timeline, and Calendar views; focused on cross-team project visibility.
-
-
-
-- **[Monday.com](https://monday.com/)**  
-
-  Work OS with customizable boards, dashboards, and automation; known for low onboarding friction and visual flexibility.
-
-
-
-- **[Kanban Tool](https://kanbantool.com/)**  
-
-  Dedicated Kanban software with swimlanes, WIP limits, and time tracking; focused on visual workflow management.
-
-
-
-- **[Kanbanchi](https://www.kanbanchi.com/)**  
-
-  Kanban board within Google Workspace; integrates with Google Drive and Calendar for collaborative task management.
-
-
-
-- **[SwiftKanban](https://www.digite.com/)**  
-
-  Enterprise Kanban and Scrum platform with analytics, portfolio views, and workflow automation.
-
-
-
-- **[ClickUp](https://clickup.com/)**  
-
-  All-in-one productivity platform with Board view alongside List, Gantt, and Calendar; combines tasks with docs and goals.
-
-
-
-- **[Wrike](https://www.wrike.com/)**  
-
-  Enterprise work management with Kanban boards, Gantt charts, and resource management; supports custom workflows.
-
-
-
-- **[Miro](https://miro.com/)**  
-
-  Collaborative whiteboard with Kanban board templates; best for teams that brainstorm and plan visually alongside task tracking.
-
-
-
-- **[MeisterTask](https://www.meistertask.com/)**  
-
-  Visual task management with Kanban boards, time tracking, and automations; known for its clean interface.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Direct Trello Alternatives (Wekan, Kanboard)
-
-
-
-- **[Wekan](https://github.com/wekan/wekan)**  
-
-  The **most direct open-source Trello replacement** (MIT, ~21k GitHub stars, in development since 2014, several releases a week) . Features: **real-time boards, lists, and cards**; **swimlanes** for grouping related tasks; **WIP limits**; webhooks; and **importers for Trello, Jira, Asana, and CSV** . **No telemetry**; self-hostable with Docker/Snap/Sandstorm . **Critical caveats**: needs **MongoDB and at least 1 GB RAM** (README recommends 4 GB for production); **no undo yet**—the maintainers ask for daily database backups; and **only the newest release is supported** because old versions have security issues . **Best for teams wanting a proven, MIT-licensed Trello clone** with swimlanes and import paths—but it requires MongoDB infrastructure and careful backup discipline.
-
-
-
-- **[Kanboard](https://github.com/kanboard/kanboard)**  
-
-  The **smallest, most finished open-source Kanban board** (MIT, ~9.9k GitHub stars) . Features: **WIP limits**, a **search language**, **automatic actions** that change assignees/colors/categories when events happen, and plugins . Runs on **SQLite, MySQL, or PostgreSQL**; supports LDAP/Active Directory and any OAuth2 provider for login . **Critical caveat**: it is in **maintenance mode**—the author is not building major new features; releases come from community contributions and small fixes . The interface is intentionally plain. **Best for minimalists and sysadmins** wanting a fast, no-nonsense Kanban board that runs on any server—but it will not evolve significantly.
-
-
-
-### Multi-View Task Managers (Vikunja)
-
-
-
-- **[Vikunja](https://github.com/go-vikunja/vikunja)**  
-
-  The **most flexible lightweight task manager** with Kanban as one of four views (AGPL-3.0, ~5.6k GitHub stars) . Features: **the same tasks as a List, Kanban board, Gantt chart, or Table**; **reminders**; **repeating tasks**; **importers for Trello, Todoist, and Microsoft To-Do**; sharing and a public API . **Deployment**: a **single binary** plus a database, or Docker; releases for Linux/macOS/Windows plus deb/rpm/apk/Arch packages . **Critical caveat**: **admin panel, audit logs, and time tracking are planned for the paid Vikunja Pro** (private beta)—the open-source version lacks them . **Best for individuals and small teams** wanting Trello-like boards plus Gantt and list views in one lightweight package—but it is task management rather than full project management.
-
-
-
-### Modern Product Trackers (Plane)
-
-
-
-- **[Plane](https://github.com/makeplane/plane)**  
-
-  The **most modern open-source Jira/Linear alternative** (AGPL-3.0 Community Edition, ~60k GitHub stars) . Features: **issues, cycles (sprints), modules, and a spec-workflow** that product teams recognize from Linear or Jira; multiple views including Kanban . **Caveats**: **the project moves fast, which is a feature until it is a problem**—upgrades are regular and occasionally breaking; if you need stability over motion, wait a release cycle before committing . **Best for modern product teams** wanting a fast, opinionated tracker with kanban boards—not a simple Trello replacement.
-
-
-
-### Collaboration-Focused Boards (Focalboard, Nextcloud Deck)
-
-
-
-- **[Focalboard](https://github.com/mattermost-community/focalboard)**  
-
-  **CAUTION**: Focalboard's standalone version has been **unmaintained since 2024**—the repo has had no commits since June 2025 . It describes itself as an alternative to Trello, Notion, and Asana, with kanban, table, gallery, and calendar views, and tight **Mattermost integration** . **Do not build a company process on it** unless you are already on Mattermost and use its Boards plugin . **Best for Mattermost users** only.
-
-
-
-- **[Nextcloud Deck](https://github.com/nextcloud/deck)**  
-
-  Open-source **Kanban board integrated with the Nextcloud ecosystem** . Features: multiple boards, card assignments, **drag-and-drop across stacks and boards**, comments, labels, real-time updates, and **file sharing with direct attachment to tasks** . **Best for teams already using Nextcloud** (Files, Talk, OnlyOffice) wanting a cohesive productivity suite—but it is basic compared to dedicated Kanban tools and has fewer third-party integrations .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Leantime](https://github.com/leantime/leantime)**  
-
-  Open-source project management system combining design thinking and Agile practices; Kanban boards alongside Gantt charts, goals, and time tracking . **Best for startups** wanting an integrated PM + strategy tool—but it is a full project manager, not a simple Kanban board .
-
-- **[Taiga](https://github.com/kaleidos-ventures/taiga)**  
-
-  Open-source Agile project management with Kanban and Scrum boards, sprint planning, and issue tracking . **Best for agile teams** wanting kanban plus sprint mechanics—but it may be complex for non-agile users and has **no mobile app** .
-
-- **[Restyaboard](https://github.com/RestyaPlatform/board)**  
-
-  Feature-rich open-source Trello alternative with **built-in time tracking and reporting**, polished UI, and a plugin marketplace . **Best for teams needing Trello simplicity plus time tracking**—but self-hosting requires more resources than lighter tools, and some advanced features are cloud-only .
-
-
-
-**Frameworks for building custom systems**: For a **direct Trello clone with swimlanes and importers**, Wekan (accepting MongoDB and backup discipline) . For a **minimal, finished board that just works**, Kanboard (accepting maintenance mode) . For **multi-view task management (Kanban + Gantt + List)**, Vikunja . For **modern product tracking with kanban**, Plane (accepting fast-moving releases) . For **Mattermost integration only**, Focalboard's plugin . **Avoid Focalboard standalone**—it is unmaintained. Choose based on whether you need a board (Wekan, Kanboard), a task manager (Vikunja), or a product tracker (Plane).
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Kanban board platforms handling project and task data must comply with organizational data governance policies; **self-hosted solutions place full responsibility for security patches, backups, and uptime on the operator**. **Wekan explicitly warns that there is no undo yet and requires daily database backups** .
-
-- **Open-source Kanban is mature but carries maintenance caveats**—**Wekan is MIT-licensed and actively developed** but needs MongoDB and careful backup discipline ; **Kanboard is in maintenance mode** and will not evolve significantly ; **Vikunja reserves admin panel, audit logs, and time tracking for its paid Pro tier** ; and **Focalboard standalone is unmaintained since 2024** . Choose based on whether you need a proven Trello clone (Wekan), a minimal board (Kanboard), or multi-view task management (Vikunja).
-
-- Verify license terms for commercial use; Wekan uses MIT , Kanboard uses MIT , Vikunja uses AGPL-3.0 , and Plane Community uses AGPL-3.0 .
-
-
 
 ---
 
+## Sector Overview & Market Dynamics
 
+The global Kanban and visual project management software sector is estimated at **$1.41 Billion to $1.88 Billion in 2025/2026**, projected to grow at a Compound Annual Growth Rate (CAGR) of **9.0% to 16.8%** toward $3.4+ Billion over the next decade.
 
-**Made for project managers, team leads, and organizations choosing their Kanban board platform.**  
+The sector is **moderately fragmented**: while a handful of dominant enterprise conglomerates and public market titans (such as Atlassian/Trello, monday.com, and Asana) control the lion's share of enterprise-wide digital workplace spend, it is not a pure "winner-take-all" market. High switching costs, varied team paradigms (e.g., developer-centric agile vs. marketing creative pipelines), and data sovereignty requirements have created durable, thriving market segments for focused multi-view collaboration tools (ClickUp, Miro), specialized lean workflow engines (Kanban Tool, SwiftKanban), and privacy-first self-hosted open-source platforms.
 
-Let's make Kanban project management more open, but with clear eyes about the maintenance status and infrastructure requirements that define each tool's real cost.
+---
+
+## SaaS & Hosted Kanban Platforms
+
+Below is a breakdown of top commercial SaaS Kanban and visual work management platforms, sorted descending by company size (market valuation or estimated enterprise scale).
+
+| Platform | Company Valuation / Revenue Scale | Starting Tier Price | Free Tier Limits / Policy | Key Highlights & Architecture Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Trello](https://trello.com/)** | **~$48B – $55B** *(Atlassian public market cap; acquired Trello for $425M)* | **$5.00** / user / month (Standard, billed annually) or $6.00 billed monthly | **Free Forever**: Max 10 boards per workspace, up to 10 collaborators per workspace, 250 automation runs/month, 10 MB file attachment cap; unlimited cards & power-ups. | The canonical visual Kanban board; lists, cards, and Butler workflow automation. |
+| **[Monday.com](https://monday.com/)** | **~$3.5B – $7.6B** *(Public NASDAQ: MNDY; ~$1.23B FY2025 revenue)* | **$9.00** / seat / month (Basic, billed annually; **3-seat min = $27/month**) | **Free Forever**: Max 2 team members, up to 3 boards total, 200 items hard cap, 500 MB storage; excludes automations, integrations, and Gantt views. | Highly customizable Work OS with board, timeline, and dashboard views with visual automations. |
+| **[ClickUp](https://clickup.com/)** | **$4.0B** *(Private valuation, Series C)* | **$7.00** / user / month (Unlimited, billed annually) or $10.00 billed monthly | **Free Forever**: Unlimited tasks & unlimited members, 100 MB total file storage cap, 100 automation runs/month, 5 Spaces, and 40 Lists per Space. | "One app to replace them all"; combines Kanban boards with docs, wikis, goals, and chat. |
+| **[Asana](https://asana.com/)** | **~$2.4B – $3.2B** *(Public NYSE: ASAN; ~$790M revenue)* | **$10.99** / user / month (Starter, billed annually) or $13.49 billed monthly | **Free Forever (Personal)**: Up to 10 teammates, unlimited tasks and projects, 100 MB file upload cap, list/board/calendar views; excludes workflow rules, timeline & custom fields. | Enterprise work management platform with board view alongside list, timeline, and portfolio views. |
+| **[Wrike](https://www.wrike.com/)** | **$2.25B** *(Acquisition valuation by Citrix/STG)* | **$10.00** / user / month (Team, billed annually; 2–15 users) | **Free Forever**: Unlimited users, 2 GB total account cloud storage cap, 200 active task/subtask hard limit; standard board & table views only. | Enterprise project management platform with custom Kanban workflows, request forms, and resource planning. |
+| **[Miro](https://miro.com/)** | **~$1.35B – $1.79B** *(Enterprise transaction valuation; peak $17.5B)* | **$8.00** / member / month (Starter, billed annually) or $10.00 billed monthly | **Free Forever**: Max 3 active editable boards (subsequent boards turn view-only), unlimited workspace members, 10 Miro AI credits/month; shared board visibility. | Infinite visual whiteboard canvas with interactive Kanban board widgets, diagrams, and sprint workshops. |
+| **[MeisterTask](https://www.meistertask.com/)** | **~$34M** *(Annual revenue run-rate, Meister)* | **$13.00** / user / month (Pro, billed annually) or $14.50 billed monthly | **Free Forever (Basic)**: Up to 3 active projects, unlimited tasks and collaborators, 20 MB file attachment cap, 5 notes, 7-day version history; excludes automations. | Clean, distraction-free visual task boards with native time tracking and integrations. |
+| **[SwiftKanban](https://www.digite.com/)** | **~$10M** *(Annual revenue run-rate, Digité / NimbleWork)* | **$7.00** / user / month (Group tier, up to 50 users) | **Free Forever**: Up to 3 users, max 2 boards, 5 standard & 5 custom card types; 30-day free trial offered for Enterprise features. | Enterprise Kanban and Scrumban platform with cumulative flow diagrams and portfolio tracking. |
+| **[Kanban Tool](https://kanbantool.com/)** | **<$5M** *(Bootstrapped, Sofpro)* | **$6.00** / user / month (Team tier, billed monthly) | **Free Forever**: Max 2 users, max 2 boards, zero file attachments supported, standard analytics; excludes time tracking and automation widgets. | Dedicated visual lean Kanban board platform with swimlanes, WIP limits, and time tracking. |
+| **[Kanbanchi](https://www.kanbanchi.com/)** | **~$1.1M** *(Annual revenue run-rate)* | **$3.97** / user / month (Essential, billed annually) | **Free Forever (Demo)**: Max 36 cards per board (boards exceeding 36 cards switch to read-only mode); 14-day free trial of Enterprise features upon signup. | Native Google Workspace Kanban board integrating directly into Google Drive and Google Calendar. |
+
+---
+
+## Open-Source GitHub Projects
+
+Self-hosted and open-source Kanban repositories provide full data sovereignty, zero per-seat licensing fees, and local database control. Sorted descending by GitHub stargazers count:
+
+| Repository & Stargazers | License | Core Technology Stack | Primary Architecture & Fit |
+| :--- | :--- | :--- | :--- |
+| **[Plane](https://github.com/makeplane/plane)** [![GitHub stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | AGPL-3.0 | Python / Django, TypeScript, Next.js, PostgreSQL | Modern Jira and Linear alternative with Kanban boards, sprint cycles, issue modules, and markdown pages. Rapidly moving release cycles. |
+| **[Focalboard](https://github.com/mattermost-community/focalboard)** [![GitHub stars](https://img.shields.io/github/stars/mattermost-community/focalboard?style=social&color=white)](https://github.com/mattermost-community/focalboard/stargazers) | AGPL-3.0 / Apache-2.0 | Go, TypeScript, React, PostgreSQL / SQLite | Multipurpose task board alternative to Trello and Notion with Kanban, table, and calendar views. **Note**: Standalone app is unmaintained; actively maintained as Mattermost Boards plugin. |
+| **[Wekan](https://github.com/wekan/wekan)** [![GitHub stars](https://img.shields.io/github/stars/wekan/wekan?style=social&color=white)](https://github.com/wekan/wekan/stargazers) | MIT | JavaScript / Meteor, Node.js, MongoDB | Canonical direct open-source Trello alternative with real-time boards, swimlanes, WIP limits, CSV/Trello importers, and zero telemetry. Requires MongoDB and regular backup discipline. |
+| **[OpenProject](https://github.com/opf/openproject)** [![GitHub stars](https://img.shields.io/github/stars/opf/openproject?style=social&color=white)](https://github.com/opf/openproject/stargazers) | GPL-3.0 | Ruby on Rails, Angular, PostgreSQL | Enterprise-grade open-source project management platform featuring Agile Kanban boards, Gantt charts, roadmaps, and bug tracking. |
+| **[Planka](https://github.com/plankanban/planka)** [![GitHub stars](https://img.shields.io/github/stars/plankanban/planka?style=social&color=white)](https://github.com/plankanban/planka/stargazers) | AGPL-3.0 | Node.js, React, Redux, PostgreSQL | Real-time elegant kanban board for workgroups with custom backgrounds, card attachments, markdown support, and timer tracking. Lightweight Docker deployment. |
+| **[Leantime](https://github.com/leantime/leantime)** [![GitHub stars](https://img.shields.io/github/stars/leantime/leantime?style=social&color=white)](https://github.com/leantime/leantime/stargazers) | AGPL-3.0 | PHP, JavaScript, MySQL / MariaDB | Goal-oriented project management system designed for non-project managers, combining Kanban boards with Lean canvas, idea boards, and milestones. |
+| **[Kanboard](https://github.com/kanboard/kanboard)** [![GitHub stars](https://img.shields.io/github/stars/kanboard/kanboard?style=social&color=white)](https://github.com/kanboard/kanboard/stargazers) | MIT | PHP, SQLite / MySQL / PostgreSQL | Minimalist, lightning-fast self-hosted Kanban board with automatic workflow actions, swimlanes, WIP limits, and subtasks. Extremely stable and resource-friendly. |
+| **[Kaneo](https://github.com/usekaneo/kaneo)** [![GitHub stars](https://img.shields.io/github/stars/usekaneo/kaneo?style=social&color=white)](https://github.com/usekaneo/kaneo/stargazers) | AGPL-3.0 | TypeScript, React, Node.js, SQLite / PostgreSQL | Modern, opinionated task tracking software with Kanban boards, interactive Gantt charts, and GitHub integration that stays out of your way. |
+| **[Fizzy](https://github.com/basecamp/fizzy)** [![GitHub stars](https://img.shields.io/github/stars/basecamp/fizzy?style=social&color=white)](https://github.com/basecamp/fizzy/stargazers) | MIT | Ruby on Rails, Hotwire / Turbo, SQLite | Refreshingly straightforward Kanban board by 37signals (Basecamp) focused on simplicity, clarity, and zero-bloat task cards. |
+| **[Vikunja](https://github.com/go-vikunja/vikunja)** [![GitHub stars](https://img.shields.io/github/stars/go-vikunja/vikunja)?style=social&color=white)](https://github.com/go-vikunja/vikunja/stargazers) | AGPL-3.0 | Go, TypeScript, Vue.js, SQLite / MySQL / PostgreSQL | Multi-view task management application providing Kanban, List, Gantt, and Table views in a single self-contained binary or Docker container. |
+| **[Taskcafe](https://github.com/JordanKnott/taskcafe)** [![GitHub stars](https://img.shields.io/github/stars/JordanKnott/taskcafe?style=social&color=white)](https://github.com/JordanKnott/taskcafe/stargazers) | MIT | Go, React, TypeScript, GraphQL, PostgreSQL | Open-source project management tool with Kanban boards, task assignments, checklist items, and project timelines. |
+| **[Nullboard](https://github.com/apankrat/nullboard)** [![GitHub stars](https://img.shields.io/github/stars/apankrat/nullboard?style=social&color=white)](https://github.com/apankrat/nullboard/stargazers) | BSD-2-Clause | Vanilla JavaScript, HTML5, LocalStorage | Zero-dependency, single-file offline minimalist Kanban dashboard focused on rapid note-taking, speed, and local privacy. |
+| **[Restyaboard](https://github.com/RestyaPlatform/board)** [![GitHub stars](https://img.shields.io/github/stars/RestyaPlatform/board?style=social&color=white)](https://github.com/RestyaPlatform/board/stargazers) | OSL-3.0 | PHP, AngularJS, PostgreSQL | Feature-complete Trello alternative with multiple layout views, Gantt integration, calendar, chat, and built-in time reporting. |
+| **[Nextcloud Deck](https://github.com/nextcloud/deck)** [![GitHub stars](https://img.shields.io/github/stars/nextcloud/deck?style=social&color=white)](https://github.com/nextcloud/deck/stargazers) | AGPL-3.0 | PHP, Vue.js (Nextcloud App) | Native Kanban task management app integrated directly into the Nextcloud cloud suite with attachments, notifications, and mobile app sync. |
+| **[Taiga](https://github.com/kaleidos-ventures/taiga)** [![GitHub stars](https://img.shields.io/github/stars/kaleidos-ventures/taiga?style=social&color=white)](https://github.com/kaleidos-ventures/taiga/stargazers) | MPL-2.0 | Python / Django, AngularJS, PostgreSQL | Agile project management platform tailored for cross-functional agile development teams using Scrum and Kanban. |
+
+---
+
+## Comparison & Architecture Guidelines
+
+When selecting a Kanban platform for your team or infrastructure, evaluate based on deployment architecture and operational complexity:
+
+```
+                            ┌───────────────────────────────────────────────┐
+                            │    Choose Your Kanban Deployment Pattern      │
+                            └───────────────────────┬───────────────────────┘
+                                                    │
+                   ┌────────────────────────────────┴────────────────────────────────┐
+                   ▼                                                                 ▼
+        ┌───────────────────────┐                                         ┌───────────────────────┐
+        │   Commercial SaaS     │                                         │ Self-Hosted / FOSS    │
+        └──────────┬────────────┘                                         └──────────┬────────────┘
+                   │                                                                 │
+      ┌────────────┴────────────┐                                       ┌────────────┴────────────┐
+      ▼                         ▼                                       ▼                         ▼
+┌─────────────┐           ┌─────────────┐                         ┌─────────────┐           ┌─────────────┐
+│ Fast/Simple │           │ All-in-One  │                         │ Minimalist  │           │ Modern/Agile│
+│ (Trello,    │           │ (ClickUp,   │                         │ (Kanboard,  │           │ (Plane,     │
+│  Meister)   │           │  Monday)    │                         │  Vikunja)   │           │  Wekan)     │
+└─────────────┘           └─────────────┘                         └─────────────┘           └─────────────┘
+```
+
+1. **For Pure Visual Simplicity & Speed**: [Trello](https://trello.com/) or [Planka](https://github.com/plankanban/planka) deliver low-friction boards without overwhelming menus.
+2. **For Complete Product Lifecycle & Sprint Planning**: [Plane](https://github.com/makeplane/plane) or [Monday.com](https://monday.com/) provide full cycle management, issue tracking, and cross-team roadmapping.
+3. **For Low-Resource Single-Server Self-Hosting**: [Kanboard](https://github.com/kanboard/kanboard) (PHP/SQLite) and [Vikunja](https://github.com/go-vikunja/vikunja) (Go single binary) run efficiently on 512MB RAM VPS instances.
+4. **For Established Enterprise Ecosystems**: [Nextcloud Deck](https://github.com/nextcloud/deck) (if already self-hosting Nextcloud) or [Kanbanchi](https://www.kanbanchi.com/) (if tied to Google Workspace).
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add your suggested SaaS tool or open-source Kanban project in alphabetical or star-ranked order.
+3. Ensure exact starting pricing, free plan restrictions, and proper GitHub star badges (`style=social&color=white`) linking to the stargazers page.
+4. Submit a Pull Request with a clear summary of your changes.
+
+---
+
+## Disclaimer
+
+- This list is community-curated for architectural comparison and research purposes.
+- All brand names, logos, and trademarks belong to their respective owners.
+- Pricing, free tier thresholds, and feature limits are subject to change by vendors; always check official vendor pricing pages before procurement.
